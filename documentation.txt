@@ -46,3 +46,6 @@ successfull, hate gradle now
 # Ignore Gradle build output directory
 build
 '''
+14.git commit -am "documentation and .gitignore"
+15.git push
+16.add .vscode to .gitignore
