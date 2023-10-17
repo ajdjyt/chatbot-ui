@@ -1,9 +1,0 @@
-npm --init
-npm install --save-dev electron
-add  "start": "electron ." to scripts in package.json
-create main.js
-create index.html
-paste the default index.html from the electron docs in it
-copy from the docs into main.js
-npm start
-!Success lmao! First try ftw

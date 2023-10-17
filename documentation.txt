@@ -1,0 +1,17 @@
+1.npm --init
+2.npm install --save-dev electron
+3.add  "start": "electron ." to scripts in package.json
+4.create main.js
+5.create index.html
+6.paste the default index.html from the electron docs in it
+7.copy from the docs into main.js
+8.npm start
+!Success lmao! First try ftw
+9.create preload.js
+10.copy paste the docs example
+11.add 'const path = require('node:path')' and 'webPreferences: {
+        preload: path.join(__dirname, 'preload.js')
+      }' 
+into browserwindow 
+12.create renderer.js
+13.add '<script src="./renderer.js"></script>' into index.html
