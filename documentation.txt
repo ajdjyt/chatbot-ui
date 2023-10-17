@@ -1,0 +1,48 @@
+1.gradle init
+2.edit build.gradle
+'''
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC5")
+    }
+}
+
+apply plugin: 'spring-boot'
+
+dependencies {
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:32.1.1-jre'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+repositories {
+    ...
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+}
+'''
+3.gradle
+successfull, hate gradle now
+4.touch README.md
+5.edit README.md
++# Web UI using springboot for the chatbot
+6.touch documentation.txt
+7.git init
+8.git add .
+9.git commit -am "base"
+10.git remote add origin https://github.com/ajdjyt/chatbot-ui
+11.git push -u origin springboot
+12.touch .gitignore
+13..gitignore got autopopulated when i ran gradle probably
+'''
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+'''
