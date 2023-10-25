@@ -18,14 +18,17 @@ buildscript {
 }
 
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
+    id 'java'
+    id 'org.springframework.boot' version '3.1.5'
 }
 
-apply plugin: 'spring-boot'
+apply plugin: 'io.spring.dependency-management'
+
+group= 'com.ap'
+version= 'alpha-0'
+sourceCompatibility= '17'
 
 repositories {
-    // Use Maven Central for resolving dependencies.
     mavenCentral()
     maven { url "https://repo.spring.io/snapshot" }
     maven { url "https://repo.spring.io/milestone" }
@@ -33,7 +36,7 @@ repositories {
 
 dependencies {
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:32.1.1-jre'
+//    implementation 'com.google.guava:guava:32.1.1-jre'
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
@@ -54,7 +57,7 @@ java {
     }
 }
 
-application {
+//application {
     // Define the main class for the application.
-    mainClass = 'web.App'
-}
+//    mainClass = 'web.App'
+//}

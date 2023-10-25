@@ -49,3 +49,10 @@ build
 14.git commit -am "documentation and .gitignore"
 15.git push
 16.add .vscode to .gitignore
+17.brew tap pivotal/tap
+18.brew install springboot
+19.sdk install gradle springboot
+20.gradle bootRun // run 
+21.gradle bootJar // compile a jar
+22.java -jar app/build/libs/app-alpha-0.jar
+23.rebased app name to 'ap'
